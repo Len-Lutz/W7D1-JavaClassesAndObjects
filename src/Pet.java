@@ -1,5 +1,6 @@
+// Implement Pet Class
 public class Pet {
-    // class attributes
+    // define class attributes
     private String name;
     private int age;
     private String location;
@@ -14,7 +15,7 @@ public class Pet {
         this.type = "Dog";
     }
 
-    //  Constructor that supplies ALL attributes
+    //  Constructor that takes in ALL attributes
     public Pet(String name, int age, String location, String type) {
         this.name = name;
         this.age = age;

@@ -3,6 +3,7 @@ import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
+        // Create lists of Pets and ToDoItems
         ArrayList<Pet> petList = new ArrayList<>(3);
         ArrayList<ToDoItem> toDoList = new ArrayList<>(3);
 
@@ -23,7 +24,7 @@ public class Main {
             System.out.println(pet.toString());
         }
 
-        // just print petList
+        // Print petList
         System.out.println("\n\nPrinting entire petList:");
         System.out.println(petList);
 
@@ -74,7 +75,7 @@ public class Main {
         }
         System.out.println();
 
-        // just print toDoList
+        // Print toDoList
         System.out.println("\n\nPrinting toDoList collectively:");
         System.out.println(toDoList);
 
