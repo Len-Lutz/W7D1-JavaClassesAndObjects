@@ -1,18 +1,12 @@
-package w7d1Homework;
-
 public class Pet {
+    // class attributes
     private String name;
     private int age;
     private String location;
     private String type;
 
-    public Pet(String name, int age, String location, String type) {
-        this.name = name;
-        this.age = age;
-        this.location = location;
-        this.type = type;
-    }
-
+    //Class Methods...
+    // Empty Constructor - supplies default information for each attribute
     public Pet() {
         this.name = "Rover";
         this.age = 2;
@@ -20,6 +14,15 @@ public class Pet {
         this.type = "Dog";
     }
 
+    //  Constructor that supplies ALL attributes
+    public Pet(String name, int age, String location, String type) {
+        this.name = name;
+        this.age = age;
+        this.location = location;
+        this.type = type;
+    }
+
+    // Getters & Setters
     public String getName() {
         return name;
     }
@@ -52,13 +55,14 @@ public class Pet {
         this.type = type;
     }
 
+    // Override the default toString Method
     @Override
     public String toString() {
         return "Pet{ name: " + name  +
-                "\n      age: " + age +
-                "\n location: " + location +
-                "\n     type: " + type +
-                "}";
+             "\n      age: " + age +
+             "\n location: " + location +
+             "\n     type: " + type +
+             "}";
     }
 }
 

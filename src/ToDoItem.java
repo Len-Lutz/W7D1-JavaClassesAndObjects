@@ -1,5 +1,3 @@
-package w7d1Homework;
-
 public class ToDoItem implements Comparable<ToDoItem>{
     private String task;
     private int priority;
@@ -24,6 +22,7 @@ public class ToDoItem implements Comparable<ToDoItem>{
     }
 
     public String getTask() {
+
         return task;
     }
 
@@ -32,27 +31,32 @@ public class ToDoItem implements Comparable<ToDoItem>{
     }
 
     public int getPriority() {
+
         return priority;
     }
 
     public void setPriority(int priority) {
+
         this.priority = priority;
     }
 
     public boolean getCompleted() {
+
         return completed;
     }
 
     public void setCompleted(boolean completed) {
+
         this.completed = completed;
     }
 
     @Override
     public String toString() {
-        return String.format("\n{ Task: %-25s  Priority: %2d   Completed: %s }",
+        return String.format("\n{ Task: %-25s   Priority: %2d   Completed: %s }",
                 task, priority, completed ? "Yes" : "No");
     }
 
+    // Override compareTo to sort list by priority - Highest (largest number) first
     @Override
     public int compareTo(ToDoItem list) {
         if( priority == list.priority) {

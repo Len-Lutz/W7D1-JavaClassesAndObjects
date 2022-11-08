@@ -1,6 +1,3 @@
-import w7d1Homework.Pet;
-import w7d1Homework.ToDoItem;
-
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -26,7 +23,7 @@ public class Main {
             System.out.println(pet.toString());
         }
 
-        // just print petlist
+        // just print petList
         System.out.println("\n\nPrinting entire petList:");
         System.out.println(petList);
 
@@ -41,7 +38,7 @@ public class Main {
         petList.get(0).setName("Jagger");
         petList.get(0).setAge(17);
         petList.get(0).setLocation("My Lap");
-        petList.get(0).setType("Longhair miniature Dachshund");
+        petList.get(0).setType("Longhair Miniature Dachshund");
 
         // display updated information for first pet in petList using
         //      class' toString method
@@ -77,7 +74,7 @@ public class Main {
         }
         System.out.println();
 
-        // just print toDolist
+        // just print toDoList
         System.out.println("\n\nPrinting toDoList collectively:");
         System.out.println(toDoList);
 
